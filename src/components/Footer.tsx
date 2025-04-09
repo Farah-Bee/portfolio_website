@@ -10,7 +10,11 @@ const Footer = () => {
       <div className="container footer-grid">
         {/* Section 1 - Branding */}
         <div className="footer-section">
-          <h3 className="footer-title">Kenuze Portfolio</h3>
+          <div className="logo">
+            <img src="/assets/images/falogo.png" alt="Farah Logo" className="logo-image" />
+            <span className="portfolio-text">Portfolio</span>
+          </div>
+  
           <p className="footer-description">
             Building exceptional digital experiences that inspire and connect with your audience.
           </p>
@@ -46,12 +50,15 @@ const Footer = () => {
         </div>
       </div>
 
+
       <div className="footer-bottom">
-        <p>© {currentYear} Kenuze. All rights reserved.</p>
-        <a href="#hero" className="back-to-top">
-          Back to top <span className="arrow">↑</span>
-        </a>
-      </div>
+        <div className="footer-bottom-center">
+          <p>© {currentYear} Kenuze. All rights reserved.</p>
+          </div>
+          <a href="#hero" className="back-to-top">
+            Back to top <span className="arrow">↑</span>
+            </a>
+          </div>
     </footer>
   );
 };

@@ -88,26 +88,32 @@
     border-top: 1px solid #374151;
     margin-top: 40px;
     padding-top: 20px;
-    font-size: 0.9rem;
-    color: #9ca3af;
+    display: flex;
+    justify-content: center; /* Center the content */
+    position: relative;
     text-align: center;
+    min-height: 40px;
   }
   
-  .footer-bottom p {
-    margin: 0;
+  .footer-bottom-center {
+    width: 100%;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.9rem;
   }
   
   .back-to-top {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     color: #3b82f6;
     text-decoration: none;
-    display: flex;
-    align-items: right;
     transition: color 0.3s ease;
   }
   
   .back-to-top:hover {
     color: #60a5fa;
-    align-items: right;
   }
   
   .arrow {
@@ -121,5 +127,9 @@
     font-size: 0.8rem;
     background-color: #1e40af;
     color: #ffffff;
+  }
+  
+  .portfolio-text {
+    color: #3b82f6; 
   }
   
