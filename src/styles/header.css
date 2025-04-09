@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 2rem 0; /* Remove left and right padding */
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .header.scrolled {
-    padding: 1.5rem 0; /* Remove left and right padding */
+    padding: 1.5rem 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -25,13 +25,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px; /* Add padding here instead */
+    padding: 0 60px;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.75rem;
     font-weight: 700;
     color: #333;
+}
+
+.logo-image {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .text-theme-600 {

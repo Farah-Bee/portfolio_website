@@ -10,10 +10,9 @@ const Header: React.FC = () => {
   const handleScroll = useCallback(() => {
     setIsScrolled(window.scrollY > 50);
 
-    // Update active section based on scroll position
     const sections = document.querySelectorAll('section[id]');
-    sections.forEach(section => {
-      if (section instanceof HTMLElement) { // Ensure the element is an HTMLElement
+    sections.forEach((section) => {
+      if (section instanceof HTMLElement) {
         const sectionTop = section.offsetTop - 100;
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id') || '';
@@ -44,9 +43,12 @@ const Header: React.FC = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <div className="logo" role="banner">
-          <span className="text-theme-600">Port</span>folio
-        </div>
+        <a href="#hero" className="logo" role="banner">
+          <img src="/assets/images/falogo.png" alt="Farah Logo" className="logo-image" />
+          <span>
+            <span className="text-theme-600">Port</span>folio
+          </span>
+        </a>
 
         <nav className="navbar">
           <ul className="nav-list">
@@ -55,9 +57,7 @@ const Header: React.FC = () => {
                 <a
                   href={item.href}
                   className={`nav-link ${
-                    activeSection === item.href.substring(1)
-                      ? "active"
-                      : ""
+                    activeSection === item.href.substring(1) ? 'active' : ''
                   }`}
                 >
                   {item.label}
@@ -75,7 +75,6 @@ const Header: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="mobile-menu">
           <ul className="mobile-nav-list">
