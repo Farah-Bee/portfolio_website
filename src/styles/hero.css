@@ -16,8 +16,8 @@
 }
 
 body.dark .hero-section {
-    background-color: #121212; /* Dark mode background */
-    color: #e0e0e0; /* Dark mode text color */
+    background-color: #1e1e2f; /* Softer dark bluish background */
+    color: #d6d6e0; /* Gentle off-white text */
 }
 
 .hero-container {
@@ -43,7 +43,7 @@ body.dark .hero-section {
 }
 
 body.dark .hero-title {
-    color: #f1f1f1; /* Dark mode title color */
+    color: #e3e8f0; /* Soft white with bluish tint */
 }
 
 .hero-name {
@@ -59,7 +59,7 @@ body.dark .hero-title {
 }
 
 body.dark .hero-subtitle {
-    color: #a1a1aa; /* Dark mode subtitle color */
+    color: #b0b3c5; /* Muted grey-blue subtitle */
 }
 
 .hero-buttons {
@@ -110,7 +110,7 @@ body.dark .hero-subtitle {
 }
 
 body.dark .profile-image {
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+    box-shadow: 0 4px 15px rgba(200, 200, 255, 0.08); /* Subtle bluish glow */
 }
 
 .profile-image:hover {
@@ -128,7 +128,7 @@ body.dark .profile-image {
 }
 
 body.dark .scroll-down-icon {
-    color: #60a5fa; /* Dark mode icon color */
+    color: #80bfff; /* Softer blue for icon */
 }
 
 .scroll-down-icon:hover {

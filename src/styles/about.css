@@ -36,10 +36,10 @@
 }
 
 .info-title {
-  font-size: 2.5rem;            
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #007BFF;               
-  font-weight: bold;            
+  color: #007BFF;
+  font-weight: bold;
 }
 
 .info-grid {
@@ -80,41 +80,39 @@
   font-weight: bold;
 }
 
-
 /* ================================
    🌙 DARK MODE STYLES
    ================================ */
 
-   .dark .about-section {
-    background: #121212; /* Slightly lighter dark background */
-    color: #e0e0e0;
-  }
-  
-  .dark .about-text h2,
-  .dark .info-title {
-    color: #60a5fa; /* Lighter modern blue */
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .dark .about-text p {
-    color: #a1a1aa; /* Softer text color */
-  }
-  
-  .dark .info-card {
-    background-color: #1f1f1f; /* Slightly lighter card background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
-  }
-  
-  .dark .info-icon {
-    color: #60a5fa; /* Consistent blue color */
-  }
-  
-  .dark .info-details h4 {
-    color: #cbd5e1; /* Lighter heading color */
-  }
-  
-  .dark .info-details p {
-    color: #f1f1f1; /* Slightly off-white text */
-  }
-  
+.dark .about-section {
+  background: #1e1e2f; /* Soft bluish-black background */
+  color: #d6d6e0; /* Calm off-white text */
+}
+
+.dark .about-text h2,
+.dark .info-title {
+  color: #80bfff; /* Soft modern blue */
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.dark .about-text p {
+  color: #b0b3c5; /* Muted blue-grey */
+}
+
+.dark .info-card {
+  background-color: #25263a; /* Gentle dark card */
+  box-shadow: 0 4px 10px rgba(180, 180, 255, 0.08); /* Subtle glow */
+}
+
+.dark .info-icon {
+  color: #80bfff; /* Lighter bluish icon */
+}
+
+.dark .info-details h4 {
+  color: #cbd5e1; /* Soft header */
+}
+
+.dark .info-details p {
+  color: #e3e8f0; /* Light but not pure white */
+}

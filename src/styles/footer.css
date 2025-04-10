@@ -1,12 +1,12 @@
 .footer {
-    background-color: #1f2937;
+    background-color: #1f2937; /* Default background for light mode */
     color: #f9fafb;
     padding: 60px 30px 30px;
 }
 
 body.dark .footer {
-    background-color: #121212; /* Dark mode background */
-    color: #e0e0e0; /* Dark mode text color */
+    background-color: #1e1e2f; /* Matching bluish-black background for dark mode */
+    color: #d6d6e0; /* Calm off-white text for dark mode */
 }
 
 .container {
@@ -35,13 +35,13 @@ body.dark .footer {
 }
 
 body.dark .footer-title {
-    color: #f1f1f1; /* Dark mode title color */
+    color: #80bfff; /* Soft modern blue for titles in dark mode */
 }
 
 .footer-subtitle {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #3b82f6;
+    color: #3b82f6; /* Original blue */
     margin-bottom: 12px;
 }
 
@@ -53,7 +53,7 @@ body.dark .footer-title {
 }
 
 body.dark .footer-description {
-    color: #a1a1aa; /* Dark mode description color */
+    color: #b0b3c5; /* Muted blue-grey for descriptions in dark mode */
 }
 
 .footer-links {
@@ -67,13 +67,13 @@ body.dark .footer-description {
 }
 
 .footer-links a {
-    color: #cbd5e0;
+    color: #cbd5e0; /* Original link color */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 body.dark .footer-links a {
-    color: #c2c2c2; /* Dark mode link color */
+    color: #80bfff; /* Lighter bluish links for dark mode */
 }
 
 .footer-links a:hover {
@@ -87,7 +87,7 @@ body.dark .footer-links a {
 }
 
 body.dark .footer-contact {
-    color: #d4d4d4; /* Dark mode contact color */
+    color: #cbd5e1; /* Soft bluish contact color for dark mode */
 }
 
 .social-links {
@@ -102,7 +102,7 @@ body.dark .footer-contact {
 }
 
 body.dark .social-links a {
-    color: #e0e0e0; /* Dark mode social link color */
+    color: #d6d6e0; /* Soft off-white for social links in dark mode */
 }
 
 .social-links a:hover {
@@ -121,7 +121,7 @@ body.dark .social-links a {
 }
 
 body.dark .footer-bottom {
-    border-top: 1px solid #4b5563; /* Dark mode border color */
+    border-top: 1px solid #4b5563; /* Subtle border color for dark mode */
 }
 
 .footer-bottom-center {
@@ -132,7 +132,7 @@ body.dark .footer-bottom {
 }
 
 body.dark .footer-bottom-center {
-    color: #a1a1aa; /* Dark mode bottom center text color */
+    color: #a1a1aa; /* Muted off-white text for dark mode bottom center */
 }
 
 .back-to-top {

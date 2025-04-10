@@ -6,8 +6,8 @@
 }
 
 body.dark .projects-section {
-    background: #121212; /* Dark mode background */
-    color: #e0e0e0; /* Dark mode text color */
+    background: #1e1e2f; /* Unified bluish-black background */
+    color: #d6d6e0; /* Light text for contrast */
 }
 
 .projects-container {
@@ -24,7 +24,7 @@ body.dark .projects-section {
 }
 
 body.dark .section-title {
-    color: #60a5fa; /* Dark mode title color */
+    color: #80bfff; /* Bright blue title */
 }
 
 .section-subtitle {
@@ -35,7 +35,7 @@ body.dark .section-title {
 }
 
 body.dark .section-subtitle {
-    color: #a1a1aa; /* Dark mode subtitle color */
+    color: #b0b3c5; /* Soft gray-blue subtitle */
 }
 
 .filter-buttons {
@@ -56,9 +56,9 @@ body.dark .section-subtitle {
 }
 
 body.dark .filter-btn {
-    background-color: #1f1f1f; /* Dark mode button background */
-    border-color: #333; /* Dark mode button border */
-    color: #e0e0e0; /* Dark mode button text color */
+    background-color: #25263a; /* Bluish-black button */
+    border-color: #3a3b5a;
+    color: #e0e6f0;
 }
 
 .filter-btn:hover {
@@ -66,7 +66,7 @@ body.dark .filter-btn {
 }
 
 body.dark .filter-btn:hover {
-    background-color: #333; /* Dark mode button hover background */
+    background-color: #2f3048; /* Hover bluish shade */
 }
 
 .filter-btn.active {
@@ -76,8 +76,9 @@ body.dark .filter-btn:hover {
 }
 
 body.dark .filter-btn.active {
-    background-color: #1e40af; /* Dark mode active button background */
-    border-color: #1e40af; /* Dark mode active button border */
+    background-color: #4169e1; /* Active bluish shade */
+    border-color: #4169e1;
+    color: #ffffff;
 }
 
 .projects-grid {
@@ -97,8 +98,8 @@ body.dark .filter-btn.active {
 }
 
 body.dark .project-card {
-    background: #1f1f1f; /* Dark mode card background */
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.08); /* Dark mode card shadow */
+    background: #25263a; /* Card dark background */
+    box-shadow: 0 8px 24px rgba(180, 200, 255, 0.06); /* Soft bluish shadow */
 }
 
 .project-card:hover {
@@ -107,7 +108,7 @@ body.dark .project-card {
 }
 
 body.dark .project-card:hover {
-    box-shadow: 0 12px 28px rgba(255, 255, 255, 0.12); /* Dark mode card hover shadow */
+    box-shadow: 0 12px 28px rgba(180, 200, 255, 0.12); /* Hover shadow dark mode */
 }
 
 .project-image img {
@@ -125,7 +126,7 @@ body.dark .project-card:hover {
 }
 
 body.dark .project-card h3 {
-    color: #f1f1f1; /* Dark mode heading color */
+    color: #e2e8f0; /* Light heading */
 }
 
 .project-card p {
@@ -136,7 +137,7 @@ body.dark .project-card h3 {
 }
 
 body.dark .project-card p {
-    color: #a1a1aa; /* Dark mode paragraph color */
+    color: #a1a1aa; /* Descriptive text in dark mode */
 }
 
 .project-links a {
@@ -150,7 +151,7 @@ body.dark .project-card p {
 }
 
 body.dark .project-links a {
-    color: #60a5fa; /* Dark mode link color */
+    color: #80bfff; /* Link color in dark mode */
 }
 
 .project-links a:hover {
@@ -158,7 +159,7 @@ body.dark .project-links a {
 }
 
 body.dark .project-links a:hover {
-    color: #93c5fd; /* Dark mode link hover color */
+    color: #93c5fd; /* Hover link color */
 }
 
 .project-links .icon {

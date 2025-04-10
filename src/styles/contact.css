@@ -8,8 +8,8 @@
 }
 
 body.dark .contact-section {
-    background: #121212; /* Dark mode background */
-    color: #e0e0e0; /* Dark mode text color */
+    background: #1e1e2f; /* Unified bluish-black background */
+    color: #d6d6e0; /* Soft light text */
 }
 
 .contact-header {
@@ -26,7 +26,7 @@ body.dark .contact-section {
 }
 
 body.dark .section-title {
-    color: #60a5fa; /* Dark mode title color */
+    color: #80bfff; /* Soft modern blue */
 }
 
 .section-title:hover {
@@ -34,7 +34,7 @@ body.dark .section-title {
 }
 
 body.dark .section-title:hover {
-    color: #5a98e2; /* Dark mode title hover color */
+    color: #5a98e2; /* Soft blue hover */
 }
 
 .section-subtitle {
@@ -44,7 +44,7 @@ body.dark .section-title:hover {
 }
 
 body.dark .section-subtitle {
-    color: #a1a1aa; /* Dark mode subtitle color */
+    color: #b0b3c5; /* Muted subtitle */
 }
 
 .contact-grid {
@@ -69,7 +69,7 @@ body.dark .section-subtitle {
 }
 
 body.dark .contact-title {
-    color: #f1f1f1; /* Dark mode title color */
+    color: #e3e8f0; /* Clean header */
 }
 
 .contact-text {
@@ -80,7 +80,7 @@ body.dark .contact-title {
 }
 
 body.dark .contact-text {
-    color: #c2c2c2; /* Dark mode text color */
+    color: #cbd5e1; /* Muted text */
 }
 
 .contact-info-group {
@@ -101,8 +101,8 @@ body.dark .contact-text {
 }
 
 body.dark .contact-card {
-    background-color: #1f1f1f; /* Dark mode card background */
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Dark mode card shadow */
+    background-color: #25263a; /* Dark card */
+    box-shadow: 0 4px 6px rgba(180, 180, 255, 0.08); /* Soft bluish shadow */
 }
 
 .contact-card:hover {
@@ -110,7 +110,7 @@ body.dark .contact-card {
 }
 
 body.dark .contact-card:hover {
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Dark mode card hover shadow */
+    box-shadow: 0 6px 12px rgba(180, 200, 255, 0.12); /* Enhanced hover glow */
 }
 
 .icon-bg {
@@ -120,7 +120,7 @@ body.dark .contact-card:hover {
 }
 
 body.dark .icon-bg {
-    background-color: #333; /* Dark mode icon background */
+    background-color: #303044; /* Dark circular background */
 }
 
 .icon {
@@ -129,13 +129,17 @@ body.dark .icon-bg {
     color: #007BFF;
 }
 
+body.dark .icon {
+    color: #80bfff; /* Unified blue icons */
+}
+
 .info-title {
     font-size: 0.9rem;
     color: #888;
 }
 
 body.dark .info-title {
-    color: #bbb; /* Dark mode info title color */
+    color: #c2cbd6; /* Light muted */
 }
 
 .info-detail {
@@ -145,7 +149,7 @@ body.dark .info-title {
 }
 
 body.dark .info-detail {
-    color: #e0e0e0; /* Dark mode info detail color */
+    color: #e6ecf3; /* Almost white */
 }
 
 .email-link {
@@ -155,7 +159,7 @@ body.dark .info-detail {
 }
 
 body.dark .email-link {
-    color: #60a5fa; /* Dark mode link color */
+    color: #80bfff; /* Blue link */
 }
 
 .email-link:hover {
@@ -164,7 +168,7 @@ body.dark .email-link {
 }
 
 body.dark .email-link:hover {
-    color: #5a98e2; /* Dark mode link hover color */
+    color: #5a98e2; /* Lighter hover */
 }
 
 .contact-form-card {
@@ -176,8 +180,8 @@ body.dark .email-link:hover {
 }
 
 body.dark .contact-form-card {
-    background: #1f1f1f; /* Dark mode form card background */
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.08); /* Dark mode form card shadow */
+    background: #25263a; /* Deep card background */
+    box-shadow: 0 8px 24px rgba(180, 180, 255, 0.08); /* Soft bluish card shadow */
 }
 
 .contact-form-card:hover {
@@ -185,7 +189,7 @@ body.dark .contact-form-card {
 }
 
 body.dark .contact-form-card:hover {
-    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15); /* Dark mode form card hover shadow */
+    box-shadow: 0 12px 30px rgba(180, 200, 255, 0.12); /* Card hover glow */
 }
 
 .form-grid {
@@ -218,9 +222,9 @@ body.dark .contact-form-card:hover {
 }
 
 body.dark .input-field {
-    border-color: #4b5563; /* Dark mode input border color */
-    background-color: #2d2d2d; /* Dark mode input background color */
-    color: #e0e0e0; /* Dark mode input text color */
+    border-color: #4b5563;
+    background-color: #2e2f45; /* Dark input background */
+    color: #e0e0e0;
 }
 
 .input-field:focus {
@@ -229,7 +233,7 @@ body.dark .input-field {
 }
 
 body.dark .input-field:focus {
-    border-color: #60a5fa; /* Dark mode input focus border color */
+    border-color: #80bfff;
 }
 
 .submit-button {

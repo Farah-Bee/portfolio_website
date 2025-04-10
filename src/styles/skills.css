@@ -8,8 +8,8 @@
 }
 
 body.dark .skills-section {
-    background: #121212; /* Dark mode background */
-    color: #e0e0e0; /* Dark mode text color */
+    background: #1e1e2f; /* Unified bluish-black background */
+    color: #d6d6e0; /* Soft light text */
 }
 
 .skills-header {
@@ -25,7 +25,7 @@ body.dark .skills-section {
 }
 
 body.dark .section-title {
-    color: #60a5fa; /* Dark mode title color */
+    color: #80bfff; /* Vibrant blue */
 }
 
 .section-subtitle {
@@ -36,7 +36,7 @@ body.dark .section-title {
 }
 
 body.dark .section-subtitle {
-    color: #a1a1aa; /* Dark mode subtitle color */
+    color: #b0b3c5; /* Muted subtitle */
 }
 
 .skills-grid {
@@ -64,7 +64,7 @@ body.dark .section-subtitle {
 }
 
 body.dark .category-title {
-    color: #60a5fa; /* Dark mode category title color */
+    color: #80bfff; /* Matching section title */
 }
 
 /* Technical Skill Cards */
@@ -82,7 +82,7 @@ body.dark .category-title {
 }
 
 body.dark .skill-label {
-    color: #e0e0e0; /* Dark mode label color */
+    color: #e6ecf3; /* Light label text */
 }
 
 .progress-bar {
@@ -93,7 +93,7 @@ body.dark .skill-label {
 }
 
 body.dark .progress-bar {
-    background: #333; /* Dark mode progress bar background */
+    background: #2e2f45; /* Subtle dark bar */
 }
 
 .progress {
@@ -103,7 +103,7 @@ body.dark .progress-bar {
 }
 
 body.dark .progress {
-    background: #60a5fa; /* Dark mode progress color */
+    background: #80bfff; /* Progress color consistent with blue theme */
 }
 
 .skill-percent {
@@ -111,7 +111,7 @@ body.dark .progress {
 }
 
 body.dark .skill-percent {
-    color: #60a5fa; /* Dark mode percent color */
+    color: #80bfff;
 }
 
 /* Soft Skills Grid */
@@ -132,9 +132,9 @@ body.dark .skill-percent {
 }
 
 body.dark .soft-skill-card {
-    background: #1f1f1f; /* Dark mode card background */
-    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.08); /* Dark mode card shadow */
-    color: #e0e0e0; /* Dark mode text color */
+    background: #25263a; /* Consistent dark card background */
+    box-shadow: 0 2px 6px rgba(180, 180, 255, 0.08); /* Soft bluish card shadow */
+    color: #d6d6e0;
 }
 
 .soft-skill-card .progress-bar {
@@ -160,10 +160,10 @@ body.dark .soft-skill-card {
 }
 
 body.dark .tool-tag {
-    background: #1f1f1f; /* Dark mode tag background */
-    border-color: #333; /* Dark mode tag border */
-    color: #e0e0e0; /* Dark mode tag text color */
-    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.06); /* Dark mode tag shadow */
+    background: #25263a; /* Dark badge background */
+    border-color: #3a3b5a; /* Dark bluish border */
+    color: #e0e6f0;
+    box-shadow: 0 1px 3px rgba(180, 200, 255, 0.06); /* Blue-tinted tag shadow */
 }
 
 /* Reveal animation */
