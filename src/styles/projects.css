@@ -5,6 +5,11 @@
     text-align: center;
 }
 
+body.dark .projects-section {
+    background: #121212; /* Dark mode background */
+    color: #e0e0e0; /* Dark mode text color */
+}
+
 .projects-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -18,11 +23,19 @@
     text-align: center;
 }
 
+body.dark .section-title {
+    color: #60a5fa; /* Dark mode title color */
+}
+
 .section-subtitle {
     font-size: 1.25rem;
     color: #666;
     margin-bottom: 40px;
     text-align: center;
+}
+
+body.dark .section-subtitle {
+    color: #a1a1aa; /* Dark mode subtitle color */
 }
 
 .filter-buttons {
@@ -42,14 +55,29 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+body.dark .filter-btn {
+    background-color: #1f1f1f; /* Dark mode button background */
+    border-color: #333; /* Dark mode button border */
+    color: #e0e0e0; /* Dark mode button text color */
+}
+
 .filter-btn:hover {
     background-color: #f1f1f1;
+}
+
+body.dark .filter-btn:hover {
+    background-color: #333; /* Dark mode button hover background */
 }
 
 .filter-btn.active {
     background-color: #007BFF;
     color: white;
     border-color: #007BFF;
+}
+
+body.dark .filter-btn.active {
+    background-color: #1e40af; /* Dark mode active button background */
+    border-color: #1e40af; /* Dark mode active button border */
 }
 
 .projects-grid {
@@ -68,9 +96,18 @@
     text-align: left;
 }
 
+body.dark .project-card {
+    background: #1f1f1f; /* Dark mode card background */
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.08); /* Dark mode card shadow */
+}
+
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+body.dark .project-card:hover {
+    box-shadow: 0 12px 28px rgba(255, 255, 255, 0.12); /* Dark mode card hover shadow */
 }
 
 .project-image img {
@@ -87,11 +124,19 @@
     margin-bottom: 8px;
 }
 
+body.dark .project-card h3 {
+    color: #f1f1f1; /* Dark mode heading color */
+}
+
 .project-card p {
     font-size: 0.95rem;
     color: #4b5563;
     margin-bottom: 12px;
     line-height: 1.4;
+}
+
+body.dark .project-card p {
+    color: #a1a1aa; /* Dark mode paragraph color */
 }
 
 .project-links a {
@@ -104,8 +149,16 @@
     align-items: center;
 }
 
+body.dark .project-links a {
+    color: #60a5fa; /* Dark mode link color */
+}
+
 .project-links a:hover {
     color: #1d4ed8;
+}
+
+body.dark .project-links a:hover {
+    color: #93c5fd; /* Dark mode link hover color */
 }
 
 .project-links .icon {

@@ -1,21 +1,31 @@
 /* header.css */
+* {
+    box-sizing: border-box; /* Ensure box-sizing is consistent */
+}
+
 .header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem 0; /* Match padding with hero section */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 999;
     transition: all 0.3s ease-in-out;
-    background: #ffffff;
+    background: #1f2937; /* Updated background color */
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    height: auto; /* Ensure height is auto */
 }
 
 .header.scrolled {
     padding: 1.5rem 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .header {
+    background: #121212; /* Dark mode background */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
 }
 
 .container {
@@ -37,6 +47,10 @@
     color: #333;
 }
 
+body.dark .logo {
+    color: #f9f9f9; /* Dark mode text color */
+}
+
 .logo-image {
     height: 45px;
     width: auto;
@@ -49,7 +63,10 @@
 }
 
 .navbar {
+    flex: 1;
     display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
 }
 
 .nav-list {
@@ -67,6 +84,10 @@
     font-size: 1.1rem;
     transition: all 0.3s ease-in-out;
     position: relative;
+}
+
+body.dark .nav-link {
+    color: #ccc; /* Dark mode link color */
 }
 
 .nav-link:hover {
@@ -89,7 +110,12 @@
     animation: underlineSlide 0.3s ease-out;
 }
 
-.mobile-menu-button {
+body.dark .nav-link.active::after {
+    background: #00bfff; /* Dark mode active link underline */
+}
+
+.mobile-menu-button,
+.dark-toggle-button {
     display: none;
     background: none;
     border: none;
@@ -98,9 +124,21 @@
     transition: all 0.3s ease-in-out;
 }
 
-.mobile-menu-button:hover {
+body.dark .mobile-menu-button,
+body.dark .dark-toggle-button {
+    color: #f0f0f0; /* Dark mode button color */
+}
+
+.mobile-menu-button:hover,
+.dark-toggle-button:hover {
     color: #007BFF;
     transform: scale(1.1);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .mobile-menu {
@@ -113,6 +151,11 @@
     position: absolute;
     top: 100%;
     left: 0;
+}
+
+body.dark .mobile-menu {
+    background: #1e1e1e; /* Dark mode mobile menu background */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
 }
 
 .mobile-nav-list {
@@ -133,9 +176,17 @@
     transition: all 0.3s ease-in-out;
 }
 
+body.dark .mobile-nav-link {
+    color: #eee; /* Dark mode mobile link color */
+}
+
 .mobile-nav-link:hover {
     color: #007BFF;
     transform: translateX(5px);
+}
+
+body.dark .mobile-nav-link:hover {
+    color: #00bfff; /* Dark mode mobile link hover color */
 }
 
 @keyframes underlineSlide {
@@ -148,7 +199,8 @@
         display: none;
     }
 
-    .mobile-menu-button {
+    .mobile-menu-button,
+    .dark-toggle-button {
         display: block;
     }
 
@@ -159,4 +211,50 @@
     .nav-link {
         font-size: 1rem;
     }
+}
+
+/* === Dark Mode Toggle Styling === */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    color: #007BFF;
+    transform: scale(1.15);
+    text-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Support for dark mode on nav elements */
+body.dark .header {
+    background: #121212;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .nav-link,
+body.dark .mobile-nav-link,
+body.dark .logo {
+    color: #eee;
+}
+
+body.dark .nav-link.active::after {
+    background: #00bfff;
+}
+
+body.dark .mobile-menu {
+    background-color: #1e1e1e;
+}
+
+body.dark .mobile-nav-link:hover,
+body.dark .nav-link:hover {
+    color: #00bfff;
 }

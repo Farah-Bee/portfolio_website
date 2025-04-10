@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import '../styles/header.css';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, MoonStar, Sun } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark');
 
   const handleScroll = useCallback(() => {
     setIsScrolled(window.scrollY > 50);
@@ -31,8 +32,13 @@ const Header: React.FC = () => {
     };
   }, [handleScroll]);
 
+  useEffect(() => {
+    document.body.classList.toggle('dark', darkMode);
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
+
   const navItems = [
-    { label: 'Home', href: '#home' },
+    { label: 'Home', href: '#hero' },
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
     { label: 'Timeline', href: '#timeline' },
@@ -67,12 +73,24 @@ const Header: React.FC = () => {
           </ul>
         </nav>
 
-        <button
-          className="mobile-menu-button"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="header-icons">
+          {/* 🌙 Dark Mode Toggle */}
+          <button
+            className="dark-mode-toggle"
+            onClick={() => setDarkMode(!darkMode)}
+            aria-label="Toggle Dark Mode"
+          >
+            {darkMode ? <Sun size={22} strokeWidth={2.5} /> : <MoonStar size={22} strokeWidth={2.5} />}
+          </button>
+
+          {/* 📱 Mobile Menu Toggle */}
+          <button
+            className="mobile-menu-button"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {isMenuOpen && (

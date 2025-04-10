@@ -2,89 +2,114 @@
     background-color: #1f2937;
     color: #f9fafb;
     padding: 60px 30px 30px;
-  }
-  
-  .container {
+}
+
+body.dark .footer {
+    background-color: #121212; /* Dark mode background */
+    color: #e0e0e0; /* Dark mode text color */
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .footer-grid {
+}
+
+.footer-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
-  }
-  
-  .footer-section {
+}
+
+.footer-section {
     flex: 1;
     min-width: 250px;
     max-width: 350px;
-  }
-  
-  .footer-title {
+}
+
+.footer-title {
     font-size: 1.6rem;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 10px;
-  }
-  
-  .footer-subtitle {
+}
+
+body.dark .footer-title {
+    color: #f1f1f1; /* Dark mode title color */
+}
+
+.footer-subtitle {
     font-size: 1.2rem;
     font-weight: bold;
     color: #3b82f6;
     margin-bottom: 12px;
-  }
-  
-  .footer-description {
+}
+
+.footer-description {
     font-size: 1rem;
     line-height: 1.6;
     color: #d1d5db;
     margin-bottom: 20px;
-  }
-  
-  .footer-links {
+}
+
+body.dark .footer-description {
+    color: #a1a1aa; /* Dark mode description color */
+}
+
+.footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .footer-links li {
+}
+
+.footer-links li {
     margin-bottom: 10px;
-  }
-  
-  .footer-links a {
+}
+
+.footer-links a {
     color: #cbd5e0;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  .footer-links a:hover {
+}
+
+body.dark .footer-links a {
+    color: #c2c2c2; /* Dark mode link color */
+}
+
+.footer-links a:hover {
     color: #3b82f6;
-  }
-  
-  .footer-contact {
+}
+
+.footer-contact {
     font-size: 1rem;
     color: #e5e7eb;
     margin-bottom: 8px;
-  }
-  
-  .social-links {
+}
+
+body.dark .footer-contact {
+    color: #d4d4d4; /* Dark mode contact color */
+}
+
+.social-links {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-  }
-  
-  .social-links a {
+}
+
+.social-links a {
     color: #f9fafb;
     transition: color 0.3s ease;
-  }
-  
-  .social-links a:hover {
+}
+
+body.dark .social-links a {
+    color: #e0e0e0; /* Dark mode social link color */
+}
+
+.social-links a:hover {
     color: #3b82f6;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     border-top: 1px solid #374151;
     margin-top: 40px;
     padding-top: 20px;
@@ -93,16 +118,24 @@
     position: relative;
     text-align: center;
     min-height: 40px;
-  }
-  
-  .footer-bottom-center {
+}
+
+body.dark .footer-bottom {
+    border-top: 1px solid #4b5563; /* Dark mode border color */
+}
+
+.footer-bottom-center {
     width: 100%;
     text-align: center;
     color: #9ca3af;
     font-size: 0.9rem;
-  }
-  
-  .back-to-top {
+}
+
+body.dark .footer-bottom-center {
+    color: #a1a1aa; /* Dark mode bottom center text color */
+}
+
+.back-to-top {
     position: absolute;
     right: 0;
     top: 50%;
@@ -110,13 +143,13 @@
     color: #3b82f6;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  .back-to-top:hover {
+}
+
+.back-to-top:hover {
     color: #60a5fa;
-  }
-  
-  .arrow {
+}
+
+.arrow {
     display: inline-block;
     margin-left: 6px;
     font-weight: bold;
@@ -127,9 +160,8 @@
     font-size: 0.8rem;
     background-color: #1e40af;
     color: #ffffff;
-  }
-  
-  .portfolio-text {
-    color: #3b82f6; 
-  }
-  
+}
+
+.portfolio-text {
+    color: #3b82f6;
+}

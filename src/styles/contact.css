@@ -5,66 +5,91 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .contact-header {
+}
+
+body.dark .contact-section {
+    background: #121212; /* Dark mode background */
+    color: #e0e0e0; /* Dark mode text color */
+}
+
+.contact-header {
     text-align: center;
     max-width: 800px;
     margin-bottom: 60px;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #007BFF;
     transition: color 0.3s ease;
-  }
-  
-  .section-title:hover {
+}
+
+body.dark .section-title {
+    color: #60a5fa; /* Dark mode title color */
+}
+
+.section-title:hover {
     color: #005bb5;
-  }
-  
-  .section-subtitle {
+}
+
+body.dark .section-title:hover {
+    color: #5a98e2; /* Dark mode title hover color */
+}
+
+.section-subtitle {
     font-size: 1.25rem;
     color: #666;
     margin-top: 10px;
-  }
-  
-  .contact-grid {
+}
+
+body.dark .section-subtitle {
+    color: #a1a1aa; /* Dark mode subtitle color */
+}
+
+.contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     max-width: 1200px;
     width: 100%;
-  }
-  
-  .contact-left, .contact-right {
+}
+
+.contact-left, .contact-right {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  }
-  
-  .contact-title {
+}
+
+.contact-title {
     font-size: 1.75rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .contact-text {
+}
+
+body.dark .contact-title {
+    color: #f1f1f1; /* Dark mode title color */
+}
+
+.contact-text {
     font-size: 1rem;
     color: #555;
     margin-bottom: 30px;
     line-height: 1.6;
-  }
-  
-  .contact-info-group {
+}
+
+body.dark .contact-text {
+    color: #c2c2c2; /* Dark mode text color */
+}
+
+.contact-info-group {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .contact-card {
+}
+
+.contact-card {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -73,78 +98,116 @@
     background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-  }
-  
-  .contact-card:hover {
+}
+
+body.dark .contact-card {
+    background-color: #1f1f1f; /* Dark mode card background */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Dark mode card shadow */
+}
+
+.contact-card:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .icon-bg {
+}
+
+body.dark .contact-card:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Dark mode card hover shadow */
+}
+
+.icon-bg {
     background-color: #e0e0e0;
     padding: 0.75rem;
     border-radius: 50%;
-  }
-  
-  .icon {
+}
+
+body.dark .icon-bg {
+    background-color: #333; /* Dark mode icon background */
+}
+
+.icon {
     width: 24px;
     height: 24px;
     color: #007BFF;
-  }
-  
-  .info-title {
+}
+
+.info-title {
     font-size: 0.9rem;
     color: #888;
-  }
-  
-  .info-detail {
+}
+
+body.dark .info-title {
+    color: #bbb; /* Dark mode info title color */
+}
+
+.info-detail {
     font-size: 1rem;
     color: #333;
     font-weight: bold;
-  }
-  
-  .email-link {
+}
+
+body.dark .info-detail {
+    color: #e0e0e0; /* Dark mode info detail color */
+}
+
+.email-link {
     color: #007BFF;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  .email-link:hover {
+}
+
+body.dark .email-link {
+    color: #60a5fa; /* Dark mode link color */
+}
+
+.email-link:hover {
     color: #005bb5;
     text-decoration: underline;
-  }
-  
-  .contact-form-card {
+}
+
+body.dark .email-link:hover {
+    color: #5a98e2; /* Dark mode link hover color */
+}
+
+.contact-form-card {
     background: white;
     padding: 24px;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease;
-  }
-  
-  .contact-form-card:hover {
+}
+
+body.dark .contact-form-card {
+    background: #1f1f1f; /* Dark mode form card background */
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.08); /* Dark mode form card shadow */
+}
+
+.contact-form-card:hover {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  }
-  
-  .form-grid {
+}
+
+body.dark .contact-form-card:hover {
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15); /* Dark mode form card hover shadow */
+}
+
+.form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
-  }
-  
-  .form-group-full {
+}
+
+.form-group-full {
     grid-column: span 2;
     display: flex;
     flex-direction: column;
     gap: 8px;
-  }
-  
-  .input-field {
+}
+
+.input-field {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -152,14 +215,24 @@
     font-size: 1rem;
     color: #333;
     transition: border-color 0.3s ease;
-  }
-  
-  .input-field:focus {
+}
+
+body.dark .input-field {
+    border-color: #4b5563; /* Dark mode input border color */
+    background-color: #2d2d2d; /* Dark mode input background color */
+    color: #e0e0e0; /* Dark mode input text color */
+}
+
+.input-field:focus {
     border-color: #007BFF;
     outline: none;
-  }
-  
-  .submit-button {
+}
+
+body.dark .input-field:focus {
+    border-color: #60a5fa; /* Dark mode input focus border color */
+}
+
+.submit-button {
     grid-column: span 2;
     display: inline-flex;
     align-items: center;
@@ -171,16 +244,15 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .submit-button:hover {
+}
+
+.submit-button:hover {
     background-color: #005bb5;
     transform: translateY(-2px);
-  }
-  
-  .submit-button .icon {
+}
+
+.submit-button .icon {
     width: 16px;
     height: 16px;
     margin-right: 8px;
-  }
-  
+}

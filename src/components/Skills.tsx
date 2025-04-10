@@ -18,7 +18,7 @@ const Skills = () => {
     { name: 'Time Management', percentage: 80 },
   ];
 
-  const tools = ['VS Code', 'Git', 'Figma', 'Webpack', 'Jest', 'AWS', 'Docker', 'GraphQL'];
+  const tools = ['Git', 'GitHub', 'Figma', 'Webpack', 'Jest', 'AWS', 'Docker', 'GraphQL'];
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {

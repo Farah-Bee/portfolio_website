@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
       <div className="hero-container">
         <div className="hero-text">
           <h1 className="hero-title">
-            Hi, I'm <span className="hero-name">Kenuze</span>
+            Hi, I'm <span className="hero-name">Farah</span>
           </h1>
           <p className="hero-subtitle">
             A passionate frontend developer crafting beautiful and functional web experiences
@@ -20,16 +20,21 @@ const Hero: React.FC = () => {
             <a href="#projects" className="hero-button primary-button">View My Work</a>
             <a href="#contact" className="hero-button outline-button">Contact Me</a>
           </div>
-          <div className="scroll-down">
-            <a href="#about" aria-label="Scroll down">
-              <ArrowDown className="scroll-icon" />
-            </a>
-          </div>
         </div>
+
         <div className="hero-image">
           <img src="/assets/images/fbi.png" alt="Profile" className="profile-image" />
         </div>
       </div>
+
+      {/* Updated ArrowDown Section */}
+      <a
+        href="#about"
+        className="scroll-down-icon"
+        aria-label="Scroll down"
+      >
+        <ArrowDown size={32} />
+      </a>
     </section>
   );
 };

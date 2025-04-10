@@ -5,25 +5,95 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .section-title {
+}
+
+body.dark .timeline-section {
+    background: #121212; /* Dark mode background */
+    color: #e0e0e0; /* Dark mode text color */
+}
+
+.section-title {
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     color: #007BFF;
     text-align: center;
-  }
-  
-  .timeline {
+}
+
+body.dark .section-title {
+    color: #60a5fa; /* Dark mode title color */
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+body.dark .section-subtitle {
+    color: #a1a1aa; /* Dark mode subtitle color */
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+body.dark .filter-btn {
+    background-color: #1f1f1f; /* Dark mode button background */
+    border-color: #333; /* Dark mode button border */
+    color: #e0e0e0; /* Dark mode button text color */
+}
+
+.filter-btn:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+body.dark .filter-btn:hover {
+    background-color: #333; /* Dark mode button hover background */
+}
+
+.filter-btn.active {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+
+body.dark .filter-btn.active {
+    background-color: #1e40af; /* Dark mode active button background */
+    border-color: #1e40af; /* Dark mode active button border */
+}
+
+/* Timeline Styles */
+.timeline {
     position: relative;
     margin: 40px auto;
     max-width: 1200px;
     border-left: 4px solid #007BFF;
     padding-left: 20px;
     width: 100%;
-  }
-  
-  .timeline-item {
+}
+
+body.dark .timeline {
+    border-left-color: #60a5fa; /* Dark mode timeline border */
+}
+
+.timeline-item {
     position: relative;
     padding: 20px;
     margin-bottom: 20px;
@@ -32,60 +102,92 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: left;
-  }
-  
-  .timeline-item:hover {
+}
+
+body.dark .timeline-item {
+    background: #1f1f1f; /* Dark mode item background */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Dark mode item shadow */
+}
+
+.timeline-item:hover {
     transform: translateY(-5px);
-  }
-  
-  .timeline-item h3 {
+}
+
+body.dark .timeline-item:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Dark mode item hover shadow */
+}
+
+.timeline-item h3 {
     margin-bottom: 5px;
     font-size: 1.5rem;
     color: #007BFF;
-  }
-  
-  .timeline-item span {
+}
+
+body.dark .timeline-item h3 {
+    color: #60a5fa; /* Dark mode heading color */
+}
+
+.timeline-item span {
     font-size: 0.9rem;
     color: #007BFF;
-  }
-  
-  .timeline-item .flex {
+}
+
+body.dark .timeline-item span {
+    color: #60a5fa; /* Dark mode span color */
+}
+
+.timeline-item .flex {
     display: flex;
     align-items: center;
-  }
-  
-  .timeline-item .p-2 {
+}
+
+.timeline-item .p-2 {
     padding: 0.5rem;
     background: #e0e0e0;
     border-radius: 50%;
-  }
-  
-  .info-icon {
+}
+
+body.dark .timeline-item .p-2 {
+    background: #333; /* Dark mode background for p-2 */
+}
+
+.info-icon {
     width: 40px;
     height: 40px;
     color: #007BFF;
-  }
-  
-  .info-details h4 {
+}
+
+body.dark .info-icon {
+    color: #60a5fa; /* Dark mode icon color */
+}
+
+.info-details h4 {
     font-size: 1rem;
     color: #888;
-  }
-  
-  .info-details p {
+}
+
+body.dark .info-details h4 {
+    color: #bbb; /* Dark mode info title color */
+}
+
+.info-details p {
     font-size: 1rem;
     color: #333;
     font-weight: bold;
-  }
-  
-  /* Reveal animation */
-  .reveal {
+}
+
+body.dark .info-details p {
+    color: #e0e0e0; /* Dark mode info detail color */
+}
+
+/* Reveal animation */
+.reveal {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
-  }
-  
-  .reveal.active {
+}
+
+.reveal.active {
     opacity: 1;
     transform: translateY(0);
-  }
-  
+}

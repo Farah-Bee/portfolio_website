@@ -9,7 +9,7 @@ const About = () => {
         <div className="about-text">
           <h2>About Me</h2>
           <p>
-            Hello! I'm <strong>Kenuze</strong>, a passionate Frontend Developer
+            Hello! I'm <strong>Farah</strong>, a passionate Frontend Developer
             dedicated to building beautiful and responsive web applications.
             I love turning ideas into reality through code. Whether it is clean UI
             or interactive animations — I am always pushing the limits!
@@ -22,7 +22,7 @@ const About = () => {
               <User className="info-icon" />
               <div className="info-details">
                 <h4>Name</h4>
-                <p>Kenuze</p>
+                <p>Farah</p>
               </div>
             </div>
             <div className="info-card">
@@ -36,7 +36,7 @@ const About = () => {
               <Mail className="info-icon" />
               <div className="info-details">
                 <h4>Email</h4>
-                <p>kenuze@example.com</p>
+                <p>farahbille75@gmail.com</p>
               </div>
             </div>
             <div className="info-card">
