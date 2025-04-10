@@ -36,10 +36,10 @@
 }
 
 .info-title {
-  font-size: 2.5rem;            /* ✅ Match “About Me” */
+  font-size: 2.5rem;            
   margin-bottom: 20px;
-  color: #007BFF;               /* ✅ Match “About Me” */
-  font-weight: bold;            /* ✅ Match “About Me” */
+  color: #007BFF;               
+  font-weight: bold;            
 }
 
 .info-grid {
